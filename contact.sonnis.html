@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Little Sonni's Blooms</title>
+    <link rel="stylesheet" href="sonnis.css">
+</head>
+
+<body id="page-body">
+
+    <header id="site-header">
+        <div id="header-container">
+            <h1 id="site-logo">Little Sonni's Blooms</h1>
+            <nav id="main-nav">
+                <ul id="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.sonnis.html">About</a></li>
+                    <li><a href="services.sonnis.html">Services</a></li>
+                    <li><a href="gallery.sonnis.html">Gallery</a></li>
+                    <li><a href="contact.sonnis.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="section-contact">
+            <h2 id="contact-title">Contact Us</h2>
+            <p id="contact-intro">Ready to order a custom gift? Send us a message!</p>
+            
+            <form id="contact-form" action="#" method="post">
+                <label for="input-name">Name:</label>
+                <input type="text" id="input-name" name="name" placeholder="Your Name" required>
+                
+                <label for="input-email">Email:</label>
+                <input type="email" id="input-email" name="email" placeholder="Your Email" required>
+                
+<label for="delivery-city">Delivery Location:</label>
+<select id="delivery-city" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 20px; font-family: 'Lato', sans-serif;">
+    <option value="" disabled selected>-- Select Your Town --</option>
+    <option value="Eldoret">Eldoret (Within CBD)</option>
+    <option value="Eldoret-Out">Eldoret (Outskirts)</option>
+    <option value="Nairobi">Nairobi</option>
+    <option value="Nakuru">Nakuru</option>
+    <option value="Other">Other Location</option>
+</select>
+
+<p id="delivery-display" style="font-weight: bold; color: #D88E8E; margin-top: -10px; margin-bottom: 20px;">
+    Delivery Fee: <span id="fee-amount">0</span> KES
+</p>
+
+                <label for="input-message">Message / Order Details:</label>
+                <input type="text" id="input-message" name="message" placeholder="Tell us what you need..." style="height: 80px;" required>
+
+                <div class="form-buttons" style="display: flex; gap: 10px; margin-top: 10px;">
+                <button type="button" id="btn-clear-form" class="btn" style="background-color: #777;">Clear Form</button>
+                <button type="submit" id="btn-submit-form" class="btn">Send Message</button>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+
+    <footer id="site-footer">
+        <p id="copyright-text">&copy; 2025 Little Sonni's Blooms. All rights reserved.</p>
+        <div id="social-links">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a>
+        </div>
+    </footer>
+    <dialog id="confirm-modal">
+    <div class="modal-content">
+        <h3>Wait a second... 🌸</h3>
+        <p>Are you sure you want to clear your message? You will lose everything you typed.</p>
+        <div class="modal-buttons">
+            <button id="btn-cancel-clear" class="btn" style="background-color: #777;">No, Keep Writing</button>
+            <button id="btn-confirm-clear" class="btn">Yes, Clear It</button>
+        </div>
+    </div>
+</dialog>
+
+<dialog id="order-modal">
+    <div class="modal-content">
+        <h3>Please Confirm Details 📝</h3>
+        <p>We want to get this perfect! Is this correct?</p>
+        
+        <div id="order-summary" style="text-align: left; background: #f9f9f9; padding: 15px; border-radius: 5px; margin: 10px 0;">
+            <p><strong>Name:</strong> <span id="summary-name"></span></p>
+            <p><strong>Email:</strong> <span id="summary-email"></span></p>
+            <p><strong>Request:</strong> <span id="summary-message"></span></p>
+        </div>
+
+        <div class="modal-buttons">
+            <button id="btn-edit-order" class="btn" style="background-color: #777;">Wait, Edit It</button>
+            <button id="btn-confirm-order" class="btn">Looks Good, Send!</button>
+        </div>
+    </div>
+</dialog>
+<div id="toast-box"></div>
+<script src="main.sonnis.js"></script>
+</body>
+</html>

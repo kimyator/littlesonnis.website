@@ -1,0 +1,18 @@
+{
+  "services": [
+    "Fresh Flower Bouquets 🌸",
+    "Chocolate & Candy Gifts 🍫",
+    "Money Bouquets 💵",
+    "Teddy Bear Arrangements 🧸",
+    "Custom Gift Hampers 🎁",
+    "Event Delivery ✈️"
+  ],
+  "gallery": [
+    { "src": "SONNIS.IMG/image1.jpg", "caption": "Beautiful Blooms" },
+    { "src": "SONNIS.IMG/image2.jpg", "caption": "Fresh Arrangements" },
+    { "src": "SONNIS.IMG/image3.jpg", "caption": "Spring Collection" },
+    { "src": "SONNIS.IMG/image4.jpg", "caption": "Summer Vibes" },
+    { "src": "SONNIS.IMG/image5.jpg", "caption": "Custom Designs" },
+    { "src": "SONNIS.IMG/image6.jpg", "caption": "Elegant Bouquets" }
+  ]
+}
